@@ -27,6 +27,7 @@ yarn add beat-ui
 
 ## 日志
 
+- [Log](https://github.com/xingdongyu1994/beat-ui/blob/master/LOG.md)
 
 ## 如何使用
 
