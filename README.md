@@ -3,26 +3,26 @@
 </p>
 
 <h1 align="center">
-learn-ui
+beat-ui
 </h1>
 
 <h4 align="center">
-学习 UI : 高仿 Antd React UI 库
+跳动 UI : 高仿 Antd React UI 库
 </h4>
 
 
 ## 名字由来
-learn(学习，获悉), 希望大家抱着学习的目的去学习开源知识
+beat(跳动), 希望大家每天都可以对抱着学习的目的去学习开源知识
 
 ## 安装
 > 使用 npm 
 ```
-npm i learn-ui --save
+npm i beat-ui --save
 ```
 
 > 使用 yarn
 ```
-yarn add learn-ui
+yarn add beat-ui
 ```
 
 

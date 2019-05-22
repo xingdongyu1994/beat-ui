@@ -1,3 +1,5 @@
-import Button from './components/Button';
+import Button from './components/Button'
 
-export default Button;
+import Modal from './components/Modal'
+
+export {Button, Modal}

@@ -13,9 +13,9 @@ export default class Button extends React.Component {
     const baseProps = {
       ...isDisabled,
       className: clasname({
-        [`learn-btn`]:'learn-btn',
-        [`learn-btn-${type}`]: type,
-        [`learn-btn-${disabled}`]: disabled
+        [`beat-btn`]:'beat-btn',
+        [`beat-btn-${type}`]: type,
+        [`beat-btn-${disabled}`]: disabled
       })
     }
     const textContent =  <span>{children}</span>
