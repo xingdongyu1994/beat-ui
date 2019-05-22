@@ -1,7 +1,7 @@
 {
   "name": "learn-ui",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "抱着学习的态度（learn-ui）",
   "main": "dist/bundle.js",
   "files": [
     "dist"
