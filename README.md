@@ -25,12 +25,12 @@ npm i beat-ui --save
 yarn add beat-ui
 ```
 
+## 日志
+
 
 ## 如何使用
 
 > 1. 全部引入
-
-
 
 
 ## 设计规范参考
