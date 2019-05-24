@@ -31,7 +31,9 @@ yarn add beat-ui
 
 ## 如何使用
 
-> 1. 全部引入
+> 1. 引入
+
+  import { Modal, Button, Input } from 'beat-ui';
 
 
 ## 设计规范参考
