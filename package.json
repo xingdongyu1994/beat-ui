@@ -1,6 +1,6 @@
 {
   "name": "beat-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "抱着学习的态度（beat-ui）",
   "main": "dist/bundle.js",
   "files": [
