@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import Modal from './components/Modal';
 
 ReactDOM.render(
-  <Modal/>, 
+  <Modal/>,
   document.getElementById('app')
-)
+);

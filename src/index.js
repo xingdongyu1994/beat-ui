@@ -1,8 +1,8 @@
-import Button from './components/Button'
+import Button from './components/Button';
 
-import Modal from './components/Modal'
+import Modal from './components/Modal';
 
-import Input from './components/Input'
+import Input from './components/Input';
 
 
-export {Button, Modal, Input}
+export {Button, Modal, Input,};

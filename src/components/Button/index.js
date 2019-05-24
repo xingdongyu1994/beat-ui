@@ -1,6 +1,6 @@
-import React from 'react'
-import clasname from "classnames"
-import './index.less'
+import React from 'react';
+import clasname from 'classnames';
+import './index.less';
 export default class Button extends React.Component {
   render() {
     const  {
@@ -8,17 +8,17 @@ export default class Button extends React.Component {
       children,  // 文本内容
       disabled,  // 是否可点击
       onClick,   // 点击事件
-    } = this.props
-    const isDisabled = disabled ? { disabled: true } : { onClick } //是否点击
+    } = this.props;
+    const isDisabled = disabled ? { disabled: true, } : { onClick, }; //是否点击
     const baseProps = {
       ...isDisabled,
       className: clasname({
-        [`beat-btn`]:'beat-btn',
+        ['beat-btn']:'beat-btn',
         [`beat-btn-${type}`]: type,
-        [`beat-btn-${disabled}`]: disabled
-      })
-    }
-    const textContent =  <span>{children}</span>
-    return <button {...baseProps}>{textContent}</button>
+        [`beat-btn-${disabled}`]: disabled,
+      }),
+    };
+    const textContent =  <span>{children}</span>;
+    return <button {...baseProps}>{textContent}</button>;
   }
 }
