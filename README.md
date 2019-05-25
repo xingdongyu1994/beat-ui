@@ -29,6 +29,10 @@ yarn add beat-ui
 
 - [Log](https://github.com/xingdongyu1994/beat-ui/blob/master/LOG.md)
 
+## 使用说明
+
+- [简单使用说明](https://github.com/xingdongyu1994/beat-ui/blob/master/COURSE.md)
+
 ## 如何使用
 
 > 1. 直接引入(有可能版本更新慢)
