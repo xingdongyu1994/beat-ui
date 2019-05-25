@@ -31,10 +31,14 @@ yarn add beat-ui
 
 ## 如何使用
 
-> 1. 引入
+> 1. 直接引入(有可能版本更新慢)
 
-  import { Modal, Button, Input, Carousel } from 'beat-ui';
+     import { Modal, Button, Input, Carousel } from 'beat-ui';
 
+> 2. npm link 本地
+   
+     npm run build   
+     npm link
 
 ## 设计规范参考
 
