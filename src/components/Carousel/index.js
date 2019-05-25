@@ -49,7 +49,7 @@ export default class Carousel extends React.Component {
     clearInterval(this.timer);
   }
   componentDidMount() {
-    const {autoplay,children,style,} = this.props;
+    const {autoplay,children,} = this.props;
     if(autoplay) {
       this.autoplay();
     }
