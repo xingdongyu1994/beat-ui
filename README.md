@@ -33,7 +33,7 @@ yarn add beat-ui
 
 > 1. 引入
 
-  import { Modal, Button, Input Carousel } from 'beat-ui';
+  import { Modal, Button, Input, Carousel } from 'beat-ui';
 
 
 ## 设计规范参考
