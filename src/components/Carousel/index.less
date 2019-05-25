@@ -1,0 +1,79 @@
+.beat-carousel{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  .beat-slick-slider {
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .beat-slick-list{
+    width: 1600px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+  }
+  
+  .beat-slick-list div {
+    float: left;
+    width: 400px;
+    height: 300px;
+  }
+  .slick-slider{
+    text-align: center;
+    background: #364d79;
+    overflow: hidden;
+    line-height: 300px;
+  }
+  .slick-slider h3{
+    margin: 0;
+    padding: 0
+  }
+  .slick-dots{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    z-index: 100;
+    bottom: 10px;
+  }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+  .slick-dots li button{
+    display: block;
+    width: 16px;
+    height: 3px;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+    background: #fff;
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    opacity: .3;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+}
