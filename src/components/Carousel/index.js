@@ -11,11 +11,9 @@ export default class Carousel extends React.Component {
     const {target,} = e;
     const {itemWidth,currIndex,} = this.state;
     if(target.nodeName === 'BUTTON'){
-      console.log(target.innerHTML);
       const clickIndex = parseInt(target.innerHTML, 10);
 
       const offset = itemWidth* (currIndex - clickIndex);
-      console.log('方法热', offset);
       this.animate(offset);
       this.setState({
         currIndex: clickIndex,
@@ -52,7 +50,6 @@ export default class Carousel extends React.Component {
   }
   componentDidMount() {
     const {autoplay,children,style,} = this.props;
-    console.log('范围分为', style);
     if(autoplay) {
       this.autoplay();
     }
@@ -78,7 +75,6 @@ export default class Carousel extends React.Component {
       dots,  // 是否显示面板指示点
       style, // 控制大小
     } =this.props;
-    console.log('发顺丰三', this.props);
     const that = this;
     const childrenList = children.map(function(item,index){
       return <div
