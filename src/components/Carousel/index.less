@@ -18,8 +18,6 @@
     position: relative;
   }
   .beat-slick-list{
-    width: 1600px;
-    height: 300px;
     position: absolute;
     z-index: 1;
     left: 0;
@@ -28,13 +26,11 @@
   .beat-slick-list div {
     float: left;
     width: 400px;
-    height: 300px;
   }
   .slick-slider{
     text-align: center;
     background: #364d79;
     overflow: hidden;
-    line-height: 300px;
   }
   .slick-slider h3{
     margin: 0;
@@ -44,7 +40,6 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 3px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -75,5 +70,13 @@
     opacity: .3;
     -webkit-transition: all .5s;
     transition: all .5s;
+  }
+  .slick-dots li.slick-active button{
+    width:24px;
+    background:#fff;
+    opacity:1
+  }
+  .ant-carousel .slick-dots li.slick-active button:hover,.ant-carousel .slick-dots li.slick-active button:focus{
+    opacity:1
   }
 }
