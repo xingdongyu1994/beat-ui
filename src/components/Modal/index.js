@@ -19,7 +19,11 @@ export default class Modal extends PureComponent {
     newmodal._container = document.getElementById('beat-modal-mask');
   }
   static warning(options) {
-    return this.renderElementMethod(options);
+    const { isStatic, } = this.props;
+    if(isStatic) {
+      return this.renderElementMethod(options);
+    }
+
   }
   componentDidUpdate () {
     const { visible, } = this.props;
@@ -30,7 +34,7 @@ export default class Modal extends PureComponent {
     }
   }
   destroy = () => {
-    this._container.remove();
+    // this._container.remove();
   };
   handOk =() => {
     this.props.onCancel();
@@ -141,8 +145,8 @@ Modal.defaultProps = {
   okText: '确认',
   cancelText: '取消',
   title: 'Basic Modal',
-  visible: true,
+  visible: false,
   onOk: () => {},
   onCancel: () => {},
-  isStatic: true,
+  isStatic: false,
 };
