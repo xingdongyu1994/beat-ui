@@ -63,3 +63,8 @@ TextArea组件 说明
    />
 
 ```
+InfoIcon ,UpIcon,DownIcon
+
+```
+  <InfoIcon || UpIcon || DownIcon  /> 添加属性  style
+```
