@@ -6,6 +6,7 @@ import Input from './components/Input';
 
 import Carousel from './components/Carousel';
 
+import {InfoIcon,UpIcon,DownIcon,} from './components/Icon';
 
 
-export {Button, Modal, Input,Carousel,};
+export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,};
