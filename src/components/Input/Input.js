@@ -1,6 +1,7 @@
 import React from 'react';
 import clasname from 'classnames';
 import './index.less';
+import { CloseIcon,} from '../Icon';
 export default class Input extends React.Component {
   state={
     value: this.props.value || '',
@@ -55,7 +56,7 @@ export default class Input extends React.Component {
             ['beat-input-suffix']: 'beat-input-suffix',
           })}
           onClick={this.handClearValue}
-        >删
+        ><CloseIcon />
         </span>
       </div>
     );
