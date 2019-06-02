@@ -1,0 +1,106 @@
+.beat-progress{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  .beat-progress-outer-main {
+    width: 100%;
+  }
+  .beat-progress-outer {
+    display: inline-block;
+    width: 100%;
+
+    .beat-progress-inner{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      background-color: #f5f5f5;
+      border-radius: 100px;
+
+      .beat-progress-bg{
+        position: relative;
+        height: 8px;
+        border-radius: 100px;
+      }
+    }
+  }
+  .beat-progress-text{
+    display: inline-block;
+    width: 2em;
+    margin-left: 8px;
+    color: rgba(0,0,0,0.45);
+    font-size: 1em;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle;
+    word-break: normal;
+  }
+}
+.beat-progress-line{
+  position: relative;
+  width: 100%;
+}
+.beat-progress-status-normal .beat-progress-bg{
+  background-color: #1890ff;
+}
+.beat-progress-status-exception .beat-progress-bg{
+  background-color: #f5222d;
+}
+.beat-progress-status-success .beat-progress-bg{
+  background-color: #52c41a;
+}
+
+.beat-progress-inner {
+  position: relative;
+  line-height: 1;
+  background-color: transparent;
+}
+.beat-progress-circle-percent{
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.65);
+  line-height: 1;
+  white-space: normal;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.beat-progress-circle .beat-progress-circle-bg {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: rgb(243, 243, 243);
+  stroke-width: 1em;
+}
+.beat-progress-circle .beat-progress-circle-stroke {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #1890ff;
+  stroke-width: 1em;
+}
+.beat-progress-circle .beat-progress-circle-stroke-normal {
+  stroke: #1890ff;
+}
+.beat-progress-circle .beat-progress-circle-stroke-exception {
+  stroke: #f5222d;
+}
+.beat-progress-circle .beat-progress-circle-stroke-success {
+  stroke: #52c41a;
+}
