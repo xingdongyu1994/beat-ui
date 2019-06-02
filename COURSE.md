@@ -68,3 +68,14 @@ InfoIcon ,UpIcon,DownIcon
 ```
   <InfoIcon || UpIcon || DownIcon || CloseIcon /> 添加属性  style
 ```
+
+Progress
+
+```
+  <Input
+      percent: 0,    // 进度条的进度
+      status: 'normal',  // exception   success
+      type: 'line',   // 圆形  ||   线性
+      width: 150, // 环形进度条 svg 的宽度
+   />
+```
