@@ -62,7 +62,7 @@ module.exports={
 		"react/jsx-closing-bracket-location": 0, //在JSX中验证右括号位置
 		"react/jsx-curly-spacing": [2, {"when": "never", "children": true}], //在JSX属性和表达式中加强或禁止大括号内的空格。
 		"react/jsx-indent": [2,2], // 语法缩进控制
-		"react/jsx-indent-props": [2, 2], //验证JSX中的props缩进是否为2个
+		"react/jsx-indent-props": 0, //验证JSX中的props缩进是否为2个
 		"react/jsx-key": 2, //在数组或迭代器中验证JSX具有key属性
 		"react/jsx-max-props-per-line": [1, {"maximum": 1}], // 限制JSX中单行上的props的最大数量
 		"react/jsx-no-bind": 0, //JSX中不允许使用箭头函数和bind

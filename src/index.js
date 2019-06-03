@@ -10,5 +10,7 @@ import {InfoIcon,UpIcon,DownIcon,CloseIcon,} from './components/Icon';
 
 import Progress from './components/Progress';
 
+import Upload from './components/Upload';
 
-export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,};
+
+export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,};
