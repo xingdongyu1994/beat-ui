@@ -69,7 +69,7 @@ InfoIcon ,UpIcon,DownIcon
   <InfoIcon || UpIcon || DownIcon || CloseIcon /> 添加属性  style
 ```
 
-Progress
+Progress组件 说明
 
 ```
   <Input
@@ -81,7 +81,7 @@ Progress
 ```
 
 
-Upload
+Upload组件 说明
 
 ```
   <Upload
@@ -94,7 +94,7 @@ Upload
    />
 ```
 
-Spin
+Spin组件 说明
 
 ```
   <Spin
