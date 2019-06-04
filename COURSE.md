@@ -93,3 +93,11 @@ Upload
      accept,  // 支持类型
    />
 ```
+
+Spin
+
+```
+  <Spin
+     tip: 'XXX' //自定义文案
+   />
+```
