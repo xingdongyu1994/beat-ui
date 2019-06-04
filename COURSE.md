@@ -79,3 +79,17 @@ Progress
       width: 150, // 环形进度条 svg 的宽度
    />
 ```
+
+
+Upload
+
+```
+  <Upload
+     directory: false, //是否上传文件夹
+     onChange:()=>{},  // 上传文件改变时的状态，详见 onChange
+     beforeUpload: ()=>{}, // 上传之前的钩子函数
+     multiple: false, //是否允许多选
+     showUploadList: true, // 是否展示上传列表
+     accept,  // 支持类型
+   />
+```

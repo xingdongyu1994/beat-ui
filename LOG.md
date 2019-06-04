@@ -11,3 +11,5 @@
 * 增加 Icon 组件    react-icon组件
 
 * 增加 Progress 组件    进度条
+
+* 增加 Upload 组件    上传
