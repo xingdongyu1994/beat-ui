@@ -1,0 +1,25 @@
+.beat-spin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .beat-spin-indicator {
+    color: #1890ff;
+    font-size: 30px;  
+  }
+  .beat-spin-ani{
+    animation-name: beatspinani;
+    display: inline-block;
+    -webkit-animation: beatspinani 1.5s linear infinite;
+    animation: beatspinani 1.5s linear infinite;
+  }
+}
+@keyframes beatspinani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -12,5 +12,6 @@ import Progress from './components/Progress';
 
 import Upload from './components/Upload';
 
+import Spin from './components/Spin';
 
-export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,};
+export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,Spin,};
