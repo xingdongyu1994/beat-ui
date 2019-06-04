@@ -13,3 +13,5 @@
 * 增加 Progress 组件    进度条
 
 * 增加 Upload 组件    上传
+
+* 增加 Spin 组件    加载中
