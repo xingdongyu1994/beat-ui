@@ -101,3 +101,26 @@ Spin组件 说明
      tip: 'XXX' //自定义文案
    />
 ```
+
+
+Form验证组件 说明
+```
+  <Form>
+  <Input placeholder="Usersex" name="inputsex" value={this.state.inputsexvalue} onChange={this.handleSexInputValue}/>
+    {
+      that.getFieldDecorator.message('inputsex',{  // key值 区分多个input
+        rules: [   //  校验规则
+          { 
+            required: true,
+            max: 6,
+          }
+        ],
+        value: this.state.inputsexvalue,  // vlaue值
+        errormessage: {    //    校验规则的errormessage描述
+          required: '不能为空'
+          max: '不能大于6个字符',
+        }
+      })
+    }
+   </Form>
+```
