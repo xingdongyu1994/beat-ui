@@ -14,4 +14,8 @@ import Upload from './components/Upload';
 
 import Spin from './components/Spin';
 
-export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,Spin,};
+import Form from './components/Form';
+import FieldDecorator from './components/Form/FieldDecorator';
+
+
+export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,Spin,Form,FieldDecorator,};
