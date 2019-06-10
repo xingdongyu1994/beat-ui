@@ -124,3 +124,14 @@ Form验证组件 说明
     }
    </Form>
 ```
+
+
+Select组件 说明
+```
+   <Select defaultValue="lucy" allowClear style={{ width: 120 }}>  默认选择项   allowClear是否能清除   disabled是否禁用 
+        <Option value="jack">Jack</Option>    style自定义
+        <Option value="lucy">Lucy</Option>
+        <Option value="lucy2">Lucy2</Option>
+        <Option value="lucy3">Lucy3</Option>
+      </Select>
+```
