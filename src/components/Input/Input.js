@@ -3,8 +3,12 @@ import clasname from 'classnames';
 import './index.less';
 import { CloseIcon,} from '../Icon';
 export default class Input extends React.Component {
-  state={
-    value: this.props.value || '',
+  constructor(props){
+    super(props);
+    const value = typeof props.value === 'undefined' ? props.defaultValue : props.value;
+    this.state = {
+      value,
+    };
   }
   handChange =(e) => {
     this.setState({
@@ -19,6 +23,14 @@ export default class Input extends React.Component {
       value: '',
     });
   }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+    	this.setState({
+        value: nextProps.value,
+      });
+    }
+  }
   render() {
     const  {
       placeholder, // 描述
@@ -27,6 +39,8 @@ export default class Input extends React.Component {
       style, // 自定义的样式
       disabled, // 是否禁用
       allowClear, // 允许手动清除
+      readonly,
+      suffix, // 内容
     } = this.props;
     const { value, } = this.state;
     const inputEle = (
@@ -39,6 +53,7 @@ export default class Input extends React.Component {
         disabled={disabled}
         onChange={this.handChange}
         placeholder={placeholder}
+        readOnly={readonly}
         style={style}
         type={type}
         value={value}
@@ -51,16 +66,25 @@ export default class Input extends React.Component {
         })}
       >
         {inputEle}
+
         <span
           className={clasname({
             ['beat-input-suffix']: 'beat-input-suffix',
           })}
-          onClick={this.handClearValue}
-        ><CloseIcon />
+
+        >
+          {
+            allowClear && value
+              ?  <CloseIcon  onClick={this.handClearValue}/>
+              :suffix
+          }
+
         </span>
+
+
       </div>
     );
-    if(allowClear) {
+    if(allowClear || value) {
       return inputWrapper;
     } else {
       return inputEle;
@@ -75,4 +99,5 @@ Input.defaultProps = {
   onChange: () => {},
   disabled: false,
   allowClear: false,
+  readonly: false,
 };

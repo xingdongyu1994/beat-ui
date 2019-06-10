@@ -87,7 +87,7 @@ module.exports={
 		"react/sort-comp": 0, //强制组件方法顺序
 		"no-extra-boolean-cast": 0, //禁止不必要的bool转换
 		"react/no-array-index-key": 0, //防止在数组中遍历中使用数组key做索引
-		"react/no-deprecated": 1, //不使用弃用的方法
+		"react/no-deprecated": 0, //不使用弃用的方法
 		"react/jsx-equals-spacing": 2, //在JSX属性中强制或禁止等号周围的空格
 		"no-unreachable": 1, //不能有无法执行的代码
 		"comma-dangle": ["error", "always"], //对象字面量项尾必须有逗号

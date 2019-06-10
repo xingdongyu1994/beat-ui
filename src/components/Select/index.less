@@ -1,0 +1,67 @@
+.beat-select{
+  width: 200px;
+
+  .beat-select-inner{
+    // display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .beat-select-main{
+    width: 100%;
+  }
+  .beat-select-negzindex {
+    z-index: -1
+  }
+  .beat-select-true {
+    background: #f5f5f5;
+    cursor: not-allowed;
+  }
+  .beat-select-content-show {
+    overflow: hidden;
+    margin-top: 1px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    z-index: 99;
+    box-shadow: 0 4px 22px 0 rgba(15, 35, 95, 0.12);
+    border-radius: 4px;
+  }
+  .beat-select-content-hide {
+    display: none
+  }
+  .beat-select-active .beat-select-arrow{
+    transform: translateY(-50%);
+  }
+  .beat-select-arrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.25);
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(-50%) rotate(180deg)
+  }
+  .beat-select-option{
+   
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 0px;
+    background: #fff;
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    overflow: hidden;
+    padding-left: 10px;
+  }
+  .beat-select-option:last-child {
+    border-bottom: none;
+  }
+  .beat-select-option:hover{
+    border-color: transparent;
+    background-color: #e6f7ff
+  }
+}
+

@@ -17,5 +17,7 @@ import Spin from './components/Spin';
 import Form from './components/Form';
 import FieldDecorator from './components/Form/FieldDecorator';
 
+import Select from './components/Select';
 
-export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,Spin,Form,FieldDecorator,};
+
+export {Button, Modal, Input,Carousel,InfoIcon,DownIcon,UpIcon,CloseIcon,Progress,Upload,Spin,Form,FieldDecorator,Select,};
